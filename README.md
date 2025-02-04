@@ -1,1 +1,1 @@
-# kezouze.github.io
+Trying to make myself a website for fun
