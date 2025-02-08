@@ -36,11 +36,11 @@
     <header class="bg-dark text-white text-center py-4">
         <div class="container">
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-                <div class="d-flex align-items-center gap-3">
-                    <img src="img/small-logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                <div class="d-flex flex-column flex-md-row gap-3">
+                    <img src="img/small-logo.png" alt="Logo" class="object-fit-contain" style="max-height: 50px;">
                     <h1 class="mb-0">Kezouze Photographie</h1>
                 </div>
-                <ul class="d-flex flex-column flex-md-row gap-3 p-0 list-unstyled mb-0">
+                <ul class="d-flex gap-3 p-0 list-unstyled mb-0">
                     <li><a href="#about" class="btn btn-outline-light header-btn">À propos</a></li>
                     <li><a href="#gallery" class="btn btn-outline-light header-btn">Galerie</a></li>
                     <li><a href="#contact" class="btn btn-outline-light header-btn">Contact</a></li>
@@ -50,7 +50,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-4 mt-4">
         <div class="container col-12 col-lg-6">
             <h2 class="text-center mb-4">À propos</h2>
             <p class="text-center">
@@ -62,7 +62,7 @@
     </section>
 
     <!-- Grid Section -->
-    <section id="gallery" class="py-5">
+    <section id="gallery" class="py-4">
         <div class="container">
             <h2 class="text-center mb-4">Galerie</h2>
             <div class="row">
@@ -80,16 +80,19 @@
     </section>
 
     <!-- Footer Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-4">
         <div class="container">
             <h2 class="text-center mb-4">Contact</h2>
-            <p class="text-center">
-                <a href="https://www.instagram.com/vincentc5109/"><img src="img/instagram-logo.png" alt="ig-logo"
-                        height="40"></a>
-            </p>
-            <p class="text-center">
-                Email: photographe@example.com
-            </p>
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+                <p class="text-center">
+                    <a href="https://www.instagram.com/vincentc5109/"><img src="img/instagram-logo.png" alt="ig-logo"
+                            height="40" class="zoom-effect"></a>
+                </p>
+                <p class="text-center">
+                    <a href="mailto:kezouzephotographie@outlook.fr"
+                        class="btn btn-outline-dark">kezouzephotographie@outlook.fr</a>
+                </p>
+            </div>
         </div>
     </section>
     <footer class="bg-dark text-white text-center py-3">
