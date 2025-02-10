@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Cardo', serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.zoom-effect {
+    transition: transform 0.2s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.modal {
+    backdrop-filter: blur(10px);
+}
