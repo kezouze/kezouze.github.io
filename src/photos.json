@@ -1,0 +1,179 @@
+{
+    "photos": [
+        {
+            "id": 1,
+            "src": "src/photos/1.jpg",
+            "category": "skate",
+            "description": "Swann - Lipslide",
+            "place": "Lannion"
+        },
+        {
+            "id": 2,
+            "src": "src/photos/2.jpg",
+            "category": "skate",
+            "description": "Rémi - Feeble",
+            "place": "Le Park'in - Reims"
+        },
+        {
+            "id": 3,
+            "src": "src/photos/3.jpg",
+            "category": "skate",
+            "description": "Baptiste - Blunt fakie",
+            "place": "Mini Max Wax - Epernay"
+        },
+        {
+            "id": 4,
+            "src": "src/photos/4.jpg",
+            "category": "landscape",
+            "description": "Cité de l'Océan",
+            "place": "Biarritz"
+        },
+        {
+            "id": 5,
+            "src": "src/photos/5.jpg",
+            "category": "landscape",
+            "description": "Le Cadre",
+            "place": "Arromanches-les-Bains"
+        },
+        {
+            "id": 6,
+            "src": "src/photos/6.jpg",
+            "category": "landscape",
+            "description": "La Plage",
+            "place": "Arromanches-les-Bains"
+        },
+        {
+            "id": 7,
+            "src": "src/photos/7.jpg",
+            "category": "landscape",
+            "description": "Grande Plage",
+            "place": "Biarritz"
+        },
+        {
+            "id": 8,
+            "src": "src/photos/8.jpg",
+            "category": "portrait",
+            "description": "Guillaume et ses bolas",
+            "place": "Port-en-Bessin"
+        },
+        {
+            "id": 9,
+            "src": "src/photos/9.jpg",
+            "category": "street photography",
+            "description": "La Passerelle",
+            "place": "Châlons-en-Champagne"
+        },
+        {
+            "id": 10,
+            "src": "src/photos/10.jpg",
+            "category": "street photography",
+            "description": "Urbex",
+            "place": "Châlons-en-Champagne"
+        },
+        {
+            "id": 11,
+            "src": "src/photos/11.jpg",
+            "category": "skate",
+            "description": "Iliès - Wallie",
+            "place": "La Rochelle"
+        },
+        {
+            "id": 12,
+            "src": "src/photos/12.jpg",
+            "category": "landscape",
+            "description": "Le Mont Saint Michel",
+            "place": "Normandie :)"
+        },
+        {
+            "id": 13,
+            "src": "src/photos/13.jpg",
+            "category": "landscape",
+            "description": "La Tour",
+            "place": "Mirabel"
+        },
+        {
+            "id": 14,
+            "src": "src/photos/14.jpg",
+            "category": "landscape",
+            "description": "Glacier 3000",
+            "place": "Les Diablerets"
+        },
+        {
+            "id": 15,
+            "src": "src/photos/15.jpg",
+            "category": "landscape",
+            "description": "La montagne en été",
+            "place": "Villars-sur-Ollon"
+        },
+        {
+            "id": 16,
+            "src": "src/photos/16.jpg",
+            "category": "street photography",
+            "description": "Au Louvre",
+            "place": "Paris"
+        },
+        {
+            "id": 17,
+            "src": "src/photos/17.jpg",
+            "category": "landscape",
+            "description": "La Cabine",
+            "place": "Courseulles-sur-Mer"
+        },
+        {
+            "id": 18,
+            "src": "src/photos/18.jpg",
+            "category": "street photography",
+            "description": "Les Bateaux",
+            "place": "Port-Blanc"
+        },
+        {
+            "id": 19,
+            "src": "src/photos/19.jpg",
+            "category": "street photography",
+            "description": "Hadrien et Adeline",
+            "place": "Toulouse"
+        },
+        {
+            "id": 20,
+            "src": "src/photos/20.jpg",
+            "category": "skate",
+            "description": "Kyja - Tailslide",
+            "place": "Le Jard - Epernay"
+        },
+        {
+            "id": 21,
+            "src": "src/photos/21.jpg",
+            "category": "skate",
+            "description": "Rémi - Fakie ollie",
+            "place": "Amsterdam"
+        },
+        {
+            "id": 22,
+            "src": "src/photos/22.jpg",
+            "category": "skate",
+            "description": "Iliès - Fs rock n' roll",
+            "place": "Amsterdam"
+        },
+        {
+            "id": 23,
+            "src": "src/photos/23.jpg",
+            "category": "skate",
+            "description": "Maxime et Swann",
+            "place": "La Parabole - Pleumeur-Bodou"
+        },
+        {
+            "id": 24,
+            "src": "src/photos/24.jpg",
+            "category": "skate",
+            "description": "Hervé - Five-0",
+            "place": "Rennes"
+        },
+        {
+            "id": 25,
+            "src": "src/photos/25.jpg",
+            "category": "skate",
+            "description": "Félix - Transfer",
+            "place": "Reims"
+        }
+    ]
+}
