@@ -78,6 +78,7 @@
                     img.src = photo.src;
                     img.alt = photo.description;
                     img.classList.add("img-fluid", "zoom-effect");
+                    img.loading = "lazy";
 
                     const caption = document.createElement("p");
                     caption.classList.add("text-start", "mt-2");
