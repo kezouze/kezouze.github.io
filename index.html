@@ -49,14 +49,18 @@
             <div class="row">
                 <div class="col-md-4 mb-4 grid-item">
                     <div class="blurred-img" style="background-image: url(src/photos/bulkresize/1.jpg);">
-                        <img src="src/photos/1.jpg" alt="photo1" class="img-fluid zoom-effect" loading="lazy">
+                        <img src="src/photos/1.jpg" alt="photo1" class="img-fluid zoom-effect">
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 grid-item">
-                    <img src="src/photos/2.jpg" alt="photo2" class="img-fluid zoom-effect" loading="lazy">
+                    <div class="blurred-img" style="background-image: url(src/photos/bulkresize/2.jpg);">
+                        <img src="src/photos/2.jpg" alt="photo2" class="img-fluid zoom-effect">
+                    </div>
                 </div>
                 <div class="col-md-4 mb-4 grid-item">
-                    <img src="src/photos/3.jpg" alt="photo3" class="img-fluid zoom-effect" loading="lazy">
+                    <div class="blurred-img" style="background-image: url(src/photos/bulkresize/3.jpg);">
+                        <img src="src/photos/3.jpg" alt="photo3" class="img-fluid zoom-effect">
+                    </div>
                 </div>
             </div>
             <a href="/gallery.html" class="btn btn-outline-dark mx-auto">Voir plus</a>
@@ -113,17 +117,22 @@
             });
         });
 
-        const blurredImageDiv = document.querySelector(".blurred-img")
-        const img = blurredImageDiv.querySelector("img")
-        function loaded() {
-            blurredImageDiv.classList.add("loaded")
-        }
+        const blurredImageDivs = document.querySelectorAll(".blurred-img");
 
-        if (img.complete) {
-            loaded()
-        } else {
-            img.addEventListener("load", loaded)
-        }
+        blurredImageDivs.forEach((blurredImageDiv) => {
+            const img = blurredImageDiv.querySelector("img")
+
+            function loaded() {
+                blurredImageDiv.classList.add("loaded")
+                console.log("Image chargée")
+            }
+
+            if (img.complete) {
+                loaded()
+            } else {
+                img.addEventListener("load", loaded)
+            }
+        });
     </script>
 </body>
 

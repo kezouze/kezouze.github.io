@@ -22,6 +22,7 @@ body {
 .blurred-img {
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .blurred-img::before {
@@ -30,6 +31,11 @@ body {
   inset: 0;
   opacity: 0;
   animation: pulse 2.5s infinite;
+
+  /* suggestion de chat GPT, incertain de l'efficacité */
+  background: inherit;
+  filter: blur(3px);
+  z-index: -1;
 }
 
 @keyframes pulse {
@@ -52,6 +58,7 @@ body {
 }
 
 .blurred-img img {
+  display: block;
   opacity: 0;
   transition: opacity 250ms ease-in-out;
 }
