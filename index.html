@@ -26,7 +26,7 @@
                     <li><a href="gallery.html" class="btn btn-outline-light header-btn">Galerie</a></li>
                     <li><a href="#contact" class="btn btn-outline-light header-btn">Contact</a></li>
                 </ul>
-            </div> loading="lazy"
+            </div>
         </div>
     </header>
 
@@ -48,7 +48,9 @@
             <h2 class="text-center mb-4">Galerie</h2>
             <div class="row">
                 <div class="col-md-4 mb-4 grid-item">
-                    <img src="src/photos/1.jpg" alt="photo1" class="img-fluid zoom-effect" loading="lazy">
+                    <div class="blurred-img">
+                        <img src="src/photos/1.jpg" alt="photo1" class="img-fluid zoom-effect" loading="lazy">
+                    </div>
                 </div>
                 <div class="col-md-4 mb-4 grid-item">
                     <img src="src/photos/2.jpg" alt="photo2" class="img-fluid zoom-effect" loading="lazy">
@@ -110,6 +112,18 @@
                 });
             });
         });
+
+        const blurredImageDiv = document.querySelector(".blurred-img")
+        const img = blurredImageDiv.querySelector("img")
+        function loaded() {
+            blurredImageDiv.classList.add("loaded")
+        }
+
+        if (img.complete) {
+            loaded()
+        } else {
+            img.addEventListener("load", loaded)
+        }
     </script>
 </body>
 
