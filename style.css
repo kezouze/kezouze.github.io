@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-    font-family: 'Cardo', serif !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
+  font-family: 'Cardo', serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
 .zoom-effect {
-    transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .zoom-effect:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .modal {
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .blurred-img {
@@ -30,16 +30,17 @@ body {
   inset: 0;
   opacity: 0;
   animation: pulse 2.5s infinite;
-  /* background-color: var(--text-color); */
 }
 
 @keyframes pulse {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.1;
   }
+
   100% {
     opacity: 0;
   }
