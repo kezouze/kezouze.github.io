@@ -25,44 +25,14 @@ body {
   position: relative;
 }
 
-.blurred-img::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  animation: pulse 2.5s infinite;
-
-  /* suggestion de chat GPT, incertain de l'efficacité */
-  background: inherit;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.blurred-img.loaded::before {
-  animation: none;
-  content: none;
-}
-
 .blurred-img img {
+  filter: blur(5px);
   display: block;
   opacity: 0;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, filter 500ms ease-in-out;
 }
 
 .blurred-img.loaded img {
   opacity: 1;
+  filter: blur(0);
 }
