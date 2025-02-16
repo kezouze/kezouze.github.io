@@ -20,7 +20,8 @@ async function loadGallery() {
                 <div class="blurred-img" style="background-image: url('src/photos/bulkresize/${photoId}.jpg')">
                     <img src="${photo.src}" alt="${photo.description}" class="img-fluid zoom-effect" loading="lazy">
                 </div>
-                <p class="text-start mt-2">${photo.description} / ${photo.place}</p>
+                <span class="img-description text-nowrap d-none d-md-block">${photo.description} / ${photo.place}</span>
+
             `;
 
             fragment.appendChild(div);
