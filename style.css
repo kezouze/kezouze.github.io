@@ -6,12 +6,7 @@ body {
   font-style: normal !important;
 }
 
-.zoom-effect {
-  transition: transform 0.2s ease;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.05);
+img:hover {
   cursor: pointer;
 }
 

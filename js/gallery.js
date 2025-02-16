@@ -18,7 +18,7 @@ async function loadGallery() {
 
             div.innerHTML = `
                 <div class="blurred-img" style="background-image: url('src/photos/bulkresize/${photoId}.jpg')">
-                    <img src="${photo.src}" alt="${photo.description}" class="img-fluid zoom-effect" loading="lazy">
+                    <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy">
                 </div>
                 <span class="img-description text-nowrap d-none d-md-block">${photo.description} / ${photo.place}</span>
 
