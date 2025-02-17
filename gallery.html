@@ -81,7 +81,7 @@
                     imageContainer.classList.add("grid-item", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
 
                     imageContainer.innerHTML = `
-                <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy">
+                <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy" decoding="async">
                 <span class="img-description text-nowrap d-none d-md-block">
                     ${photo.description} / ${photo.place}
                 </span>
