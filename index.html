@@ -36,7 +36,7 @@
             <h2 class="text-center m-4">À propos</h2>
             <div class="row align-items-center text-center">
                 <div class="col-md-6">
-                    <img src="src/photos/portrait.jpg" alt="Portrait" class="img-fluid w-50">
+                    <img src="src/photos/portrait.webp" alt="Portrait" class="img-fluid w-50">
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0 px-md-4">
                     <p>
@@ -52,27 +52,29 @@
     </section>
 
     <!-- Grid Section -->
-    <section id="gallery" class="py-4">
-        <div class="container text-center">
-            <h2 class="text-center m-4">Galerie</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0 grid-item">
-                    <img src="src/photos/1.jpg" alt="photo1" class="img-fluid" loading="lazy" decoding="async">
-                    <span class="img-description text-nowrap d-none d-md-block">Swann - Lipslide / Lannion</span>
+    <section id="gallery" class="py-4 text-center">
+        <h2 class="text-center m-4">Galerie</h2>
+        <div class="container">
+            <div class="row mx-auto w-75">
+                <div class="col-md-6 d-flex flex-column">
+                    <div class="w-100 h-50">
+                        <img src="src/photos/1.webp" alt="photo1" class="img-fluid" loading="lazy" decoding="async">
+                        <span class="img-description text-nowrap d-none d-md-block">Rémi - Feeble / Reims</span>
+                    </div>
+                    <div class="w-100 h-50">
+                        <img src="src/photos/3.webp" alt="photo3" class="img-fluid" loading="lazy" decoding="async">
+                        <span class="img-description text-nowrap d-none d-md-block">Baptiste - Blunt fakie / Epernay</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-4 mb-md-0 grid-item">
-                    <img src="src/photos/2.jpg" alt="photo2" class="img-fluid" loading="lazy" decoding="async">
-                    <span class="img-description text-nowrap d-none d-md-block">Rémi - Feeble / Reims</span>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0 grid-item">
-                    <img src="src/photos/3.jpg" alt="photo3" class="img-fluid" loading="lazy" decoding="async">
-                    <span class="img-description text-nowrap d-none d-md-block">Baptiste - Blunt fakie / Epernay</span>
+                <div class="col-md-6">
+                    <img src="src/photos/2.webp" alt="photo2" class="img-fluid" loading="lazy" decoding="async">
+                    <span class="img-description text-nowrap d-none d-md-block">Max et Swann / La parabole</span>
                 </div>
             </div>
-            <a href="/gallery.html" class="btn btn-outline-dark mt-md-4 mx-auto">Voir plus</a>
         </div>
-        <!-- mx-auto for center element on x when its parent has the text center attribute -->
+        <a href="/gallery.html" class="btn btn-outline-dark mt-md-4 mx-auto">Voir plus</a>
     </section>
+    
 
     <!-- Footer Section -->
     <section id="contact" class="py-4">
