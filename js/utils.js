@@ -1,4 +1,4 @@
-// Importe les photos et gère l'affichage avec grid Masonry
+// Importe les photos et gère l'affichage avec grid Masonry sur gallery.html
 export async function loadGallery() {
     try {
         const response = await fetch('/src/photos.json');
@@ -8,7 +8,7 @@ export async function loadGallery() {
 
         data.photos.forEach((photo) => {
             const imageContainer = document.createElement("div");
-            imageContainer.classList.add("grid-item", "grid-item-gallery", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
+            imageContainer.classList.add("grid-item", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
 
             imageContainer.innerHTML = `
         <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy" decoding="async">
@@ -66,14 +66,3 @@ export function setupModal(galleryImages) {
     document.getElementById('nextBtn').addEventListener('click', () => showImage(currentIndex + 1));
 }
 
-// Gère l'ajout de la classe "loaded" quand l'image est chargée
-export function handleImageLoading() {
-    document.querySelectorAll(".blurred-img").forEach(blurredDiv => {
-        const img = blurredDiv.querySelector("img");
-        if (img.complete) {
-            blurredDiv.classList.add("loaded");
-        } else {
-            img.addEventListener("load", () => blurredDiv.classList.add("loaded"));
-        }
-    });
-}
