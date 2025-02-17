@@ -8,7 +8,7 @@ export async function loadGallery() {
 
         data.photos.forEach((photo) => {
             const imageContainer = document.createElement("div");
-            imageContainer.classList.add("grid-item", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
+            imageContainer.classList.add("grid-item", "grid-item-gallery", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
 
             imageContainer.innerHTML = `
         <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy" decoding="async">
