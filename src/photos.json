@@ -3,21 +3,21 @@
         {
             "id": 1,
             "src": "src/photos/1.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Rémi - Feeble",
             "place": "Le Park'in - Reims"
         },
         {
             "id": 2,
             "src": "src/photos/2.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Maxime et Swann",
             "place": "La Parabole - Pleumeur-Bodou"
         },
         {
             "id": 3,
             "src": "src/photos/3.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Baptiste - Blunt fakie",
             "place": "Mini Max Wax - Epernay"
         },
@@ -53,7 +53,7 @@
             "id": 8,
             "src": "src/photos/8.webp",
             "category": "portrait",
-            "description": "Guillaume et ses bolas",
+            "description": "Guillaume",
             "place": "Port-en-Bessin"
         },
         {
@@ -73,7 +73,7 @@
         {
             "id": 11,
             "src": "src/photos/11.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Iliès - Wallie",
             "place": "La Rochelle"
         },
@@ -136,65 +136,107 @@
         {
             "id": 20,
             "src": "src/photos/20.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Kyja - Tailslide",
             "place": "Le Jard - Epernay"
         },
         {
             "id": 21,
             "src": "src/photos/21.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Rémi - Fakie ollie",
             "place": "Amsterdam"
         },
         {
             "id": 22,
             "src": "src/photos/22.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Iliès - Fs rock n' roll",
             "place": "Amsterdam"
         },
         {
             "id": 23,
             "src": "src/photos/23.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Swann - Lipslide",
             "place": "Lannion"
         },
         {
             "id": 24,
             "src": "src/photos/24.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Hervé - Five-0",
             "place": "Rennes"
         },
         {
             "id": 25,
             "src": "src/photos/25.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Félix - Transfer",
             "place": "Reims"
         },
         {
             "id": 26,
             "src": "src/photos/26.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Guillaume - Fs ollie",
             "place": "Beny-Bocage"
         },
         {
             "id": 27,
             "src": "src/photos/27.webp",
-            "category": "skate",
+            "category": "skateboard",
             "description": "Charles - Pole Jam",
             "place": "Troyes"
         },
         {
             "id": 28,
             "src": "src/photos/28.webp",
+            "category": "landscape",
+            "description": "Les sous-bois",
+            "place": "Bayeux"
+        },
+        {
+            "id": 29,
+            "src": "src/photos/29.webp",
+            "category": "street photography",
+            "description": "Cimetière",
+            "place": "Londres"
+        },
+        {
+            "id": 30,
+            "src": "src/photos/30.webp",
+            "category": "landscape",
+            "description": "La chapelle",
+            "place": "Port-Blanc"
+        },
+        {
+            "id": 31,
+            "src": "src/photos/31.webp",
+            "category": "landscape",
+            "description": "Feu d'artifice",
+            "place": "Port-en-Bessin"
+        },
+        {
+            "id": 32,
+            "src": "src/photos/32.webp",
             "category": "portrait",
-            "description": "Réflection",
-            "place": "Châlons-en-Champagne"
+            "description": "Agathe et moi",
+            "place": "Reims"
+        },
+        {
+            "id": 33,
+            "src": "src/photos/33.webp",
+            "category": "skateboard",
+            "description": "Alex - Pivot fakie",
+            "place": "Le hangar"
+        },
+        {
+            "id": 34,
+            "src": "src/photos/34.webp",
+            "category": "portrait",
+            "description": "Autoportrait",
+            "place": "Bayeux"
         }
     ]
 }
