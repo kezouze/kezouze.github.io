@@ -1,8 +1,12 @@
-# Ignorer les fichiers système macOS
-.DS_Store
-
 # Ignorer les fichiers de l'éditeur
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Ignorer les fichiers système macOS
+*.DS_Store
+src/.DS_Store
+
+# Ignorer .gitignore
+.gitignore
