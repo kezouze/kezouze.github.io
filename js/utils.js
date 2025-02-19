@@ -32,7 +32,7 @@ export async function loadGallery() {
         });
 
         // Met à jour Masonry après chargement des images
-        imagesLoaded(grid, function () {
+        imagesLoaded(grid).on('progress' , function () {
             masonry.layout();
         });
 
