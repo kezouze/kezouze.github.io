@@ -10,6 +10,23 @@ img:hover {
   cursor: pointer;
 }
 
+.small-logo {
+  max-height: 4em;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+.zoom-effect:not(:hover) {
+  transition: transform 0.5s ease-out;
+}
+
+
 .modal {
   backdrop-filter: blur(10px);
 }
