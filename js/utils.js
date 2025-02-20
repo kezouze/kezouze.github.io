@@ -2,9 +2,13 @@
 export async function loadGallery() {
     try {
         const response = await fetch('/src/photos.json');
+        if (!response.ok) {
+            throw new Error(`Erreur HTTP, status : ${response.status}`);
+        }
         const data = await response.json();
         const grid = document.querySelector(".grid");
         const galleryImages = []; // tableau pour stocker les <img>
+        const fragment = document.createDocumentFragment(); // fragment pour optimiser l'ajout d'éléments et éviter les reflows
 
         data.photos.forEach((photo) => {
             const imageContainer = document.createElement("div");
@@ -23,6 +27,8 @@ export async function loadGallery() {
             const img = imageContainer.querySelector("img");
             galleryImages.push(img);
         });
+
+        grid.appendChild(fragment); // Ajoute les éléments du fragment au DOM
 
         // Initialise Masonry
         const masonry = new Masonry(grid, {
