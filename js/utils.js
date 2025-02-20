@@ -27,8 +27,7 @@ export async function loadGallery() {
         // Initialise Masonry
         const masonry = new Masonry(grid, {
             itemSelector: ".grid-item",
-            columnWidth: ".grid-sizer",
-            percentPosition: true
+            // percentPosition: true
         });
 
         // Met à jour Masonry après chargement des images
