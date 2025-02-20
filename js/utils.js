@@ -16,7 +16,7 @@ export async function loadGallery() {
 
             imageContainer.innerHTML = `
         <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy" decoding="async">
-        <span class="img-description text-nowrap d-none d-md-block">
+        <span class="img-description position-absolute start-50 translate-middle-x text-dark px-2 py-1 rounded text-nowrap d-none d-md-block">
             ${photo.description} / ${photo.place}
         </span>
     `;
@@ -37,7 +37,7 @@ export async function loadGallery() {
         });
 
         // Met à jour Masonry après chargement des images
-        imagesLoaded(grid).on('progress' , function () {
+        imagesLoaded(grid).on('progress', function () {
             masonry.layout();
         });
 
