@@ -34,6 +34,12 @@
         <div class="container-fluid px-3">
             <h2 class="text-center m-4">Galerie</h2>
             <div class="grid">
+                <template id="photo-template">
+                    <div class="grid-item col-lg-4 col-md-6 col-sm-12 p-3">
+                      <img src="" alt="" class="img-fluid" loading="lazy" decoding="async">
+                      <span class="img-description position-absolute start-50 translate-middle-x text-dark px-2 py-1 rounded text-nowrap d-none d-md-block"></span>
+                    </div>
+                  </template>                  
             </div>
         </div>
     </section>

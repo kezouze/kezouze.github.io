@@ -8,27 +8,25 @@ export async function loadGallery() {
         const data = await response.json();
         const grid = document.querySelector(".grid");
         const galleryImages = []; // tableau pour stocker les <img>
-        const fragment = document.createDocumentFragment(); // fragment pour optimiser l'ajout d'éléments et éviter les reflows
+        const fragment = document.createDocumentFragment(); // pour éviter de multiples reflows
+        const template = document.getElementById('photo-template');
 
         data.photos.forEach((photo) => {
-            const imageContainer = document.createElement("div");
-            imageContainer.classList.add("grid-item", "col-lg-4", "col-md-6", "col-sm-12", "p-3");
+            const clone = template.content.cloneNode(true);
 
-            imageContainer.innerHTML = `
-        <img src="${photo.src}" alt="${photo.description}" class="img-fluid" loading="lazy" decoding="async">
-        <span class="img-description position-absolute start-50 translate-middle-x text-dark px-2 py-1 rounded text-nowrap d-none d-md-block">
-            ${photo.description} / ${photo.place}
-        </span>
-    `;
+            const img = clone.querySelector('img');
+            img.src = photo.src;
+            img.alt = photo.description;
 
-            grid.appendChild(imageContainer);
+            const span = clone.querySelector('.img-description');
+            span.textContent = `${photo.description} / ${photo.place}`;
 
-            // Récupère l'image pour l'ajouter au tableau des images de la galerie
-            const img = imageContainer.querySelector("img");
+            fragment.appendChild(clone);
             galleryImages.push(img);
         });
 
-        grid.appendChild(fragment); // Ajoute les éléments du fragment au DOM
+        // Ajoute tous les éléments à la grille en une seule opération
+        grid.appendChild(fragment);
 
         // Initialise Masonry
         const masonry = new Masonry(grid, {
@@ -36,14 +34,13 @@ export async function loadGallery() {
             // percentPosition: true
         });
 
-        // Met à jour Masonry après chargement des images
+        // Met à jour Masonry au fur et à mesure que les images se chargent
         imagesLoaded(grid).on('progress', function () {
             masonry.layout();
         });
 
         // Intègre le plein écran en passant le tableau des images
         setupModal(galleryImages);
-
     } catch (error) {
         console.error("Erreur lors du chargement des images :", error);
     }
@@ -70,4 +67,3 @@ export function setupModal(galleryImages) {
     document.getElementById('prevBtn').addEventListener('click', () => showImage(currentIndex - 1));
     document.getElementById('nextBtn').addEventListener('click', () => showImage(currentIndex + 1));
 }
-
