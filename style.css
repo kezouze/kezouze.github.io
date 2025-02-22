@@ -10,6 +10,10 @@ img:hover {
   cursor: pointer;
 }
 
+.portrait:hover {
+  cursor: default;
+}
+
 .small-logo {
   max-height: 4em;
 }
