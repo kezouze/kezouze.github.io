@@ -13,7 +13,7 @@
 <body>
 
     <!-- Header Section -->
-    <header class="bg-dark text-white text-center p-3">
+    <header id="header" class="bg-dark text-white text-center p-3">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-5">
@@ -22,7 +22,7 @@
                     <h1 class="text-white text-nowrap">Kezouze Photographie</h1>
                 </div>
                 <div class="col-md-6 col-lg-5">
-                    <a href="#about" class="btn btn-outline-light text-nowrap mx-md-2">À propos</a>
+                    <a href="index.html#about" class="btn btn-outline-light text-nowrap mx-md-2">À propos</a>
                     <a href="index.html" class="btn btn-outline-light mx-md-2">Accueil</a>
                     <!-- <a href="gallery.html" class="btn btn-outline-light mx-md-2">Galerie</a> -->
                     <a href="#footer" class="btn btn-outline-light mx-md-2">Contact</a>
@@ -53,11 +53,22 @@
         </div>
     </section>
 
-    <!-- <footer class="bg-dark text-white text-center py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <p class="mb-0">&copy; 2025 Constantin Vincent. Tous droits réservés.</p>
+    <!-- Footer/contact Section -->
+    <footer id="footer" class="container-fluid bg-dark text-white p-3">
+        <div class="d-flex flex-column flex-md-row justify-content-around align-items-center gap-3">
+            <h3 class="text-uppercase mb-0 text-center">Contact</h3>
+            <div class="text-nowrap">
+                <img src="src/logos/mail.png" alt="mail-logo" height="40">
+                <a href="mailto:kezouzephotographie@outlook.fr"
+                    class="text-decoration-none fs-md-5">kezouzephotographie@outlook.fr</a>
+            </div>
+            <div>
+                <img src="src/logos/instagram-logo.png" alt="ig-logo" height="40">
+                <a href="https://www.instagram.com/vincentc5109/" class="text-decoration-none fs-md-5"
+                    target="_blank">vincentc5109</a>
+            </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Fullscreen Image Modal --> <!-- répétition de index.html -->
     <div class="modal fade" id="imageModal" tabindex="-1">
