@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 body {
   font-family: 'Cardo', serif !important;
@@ -14,8 +15,15 @@ img:hover {
   cursor: default;
 }
 
-.small-logo {
-  max-height: 4em;
+.logo {
+  transform: scaleX(-1);
+}
+
+h1 {
+  font-family: 'Dancing Script', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
 }
 
 .zoom-effect {
