@@ -15,15 +15,10 @@ img:hover {
   cursor: default;
 }
 
-.logo {
-  transform: scaleX(-1);
-}
-
 h1 {
   font-family: 'Dancing Script', serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2em;
 }
 
 .zoom-effect {
