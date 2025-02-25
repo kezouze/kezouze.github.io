@@ -52,3 +52,23 @@ h1 {
 .grid-item:hover .img-description {
   opacity: 1;
 }
+
+.blurred-img {
+  filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.blurred-img img {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.blurred-img.loaded img {
+  opacity: 1;
+}
+
+.blurred-img.loaded {
+  filter: none;
+}
