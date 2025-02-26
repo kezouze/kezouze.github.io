@@ -58,17 +58,15 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  /* mis à jour de filter géré par js dans la fonction loadImages() */
+  transition: filter 750ms ease-in-out;
 }
 
 .blurred-img img {
   opacity: 0;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 750ms ease-in-out;
 }
 
 .blurred-img.loaded img {
   opacity: 1;
-}
-
-.blurred-img.loaded {
-  filter: none;
 }
