@@ -21,12 +21,17 @@ export async function loadGallery() {
             const span = clone.querySelector('.img-description');
             span.textContent = `${photo.description} / ${photo.place}`;
 
+            const blurredDiv = clone.querySelector('.blurred-img');
+            blurredDiv.style.backgroundImage = `url(${photo.src.replace(".webp", "lowres.webp")})`;
+
             fragment.appendChild(clone);
             galleryImages.push(img);
         });
 
         // Ajoute tous les éléments à la grille en une seule opération
         grid.appendChild(fragment);
+        // Puis on appelle loadImages pour gérer l'affichage
+        loadImages();
 
         // Initialise Masonry
         const masonry = new Masonry(grid, {
@@ -35,7 +40,8 @@ export async function loadGallery() {
         });
 
         // Met à jour Masonry au fur et à mesure que les images se chargent
-        imagesLoaded(grid).on('progress', function () {
+        imagesLoaded(grid).on('progress' /* 'always' */, function () {
+            // always : appel une fois que toutes les images sont chargées, progress : appel à chaque image
             masonry.layout();
         });
 
@@ -44,6 +50,33 @@ export async function loadGallery() {
     } catch (error) {
         console.error("Erreur lors du chargement des images :", error);
     }
+}
+
+function loadImages() {
+    const blurredImageDivs = document.querySelectorAll(".blurred-img");
+    
+    blurredImageDivs.forEach((blurredImageDiv) => {
+        const img = blurredImageDiv.querySelector("img");
+        
+        function loaded() {
+            blurredImageDiv.classList.add("loaded");
+            setTimeout(() => { // Évite un effet trop rapide
+                blurredImageDiv.style.filter = "none";
+            }, 1400);
+        }
+        
+        if (img) {
+            //console.log("Image trouvée :", img.src, "Complete:", img.complete);
+            
+            if (img.complete) {
+                loaded();
+            }
+            
+            img.addEventListener("load", loaded, { once: true }); // S'assure que l'événement ne se déclenche qu'une seule fois
+        } else {
+            console.log("Aucune image trouvée dans :", blurredImageDiv);
+        }
+    });
 }
 
 // Gère l'affichage des images en plein écran avec Bootstrap Modal
