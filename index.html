@@ -15,17 +15,25 @@
     <!-- Header Section -->
     <header id="header" class="bg-dark text-white text-center p-3">
         <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center gap-3">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center gap-2">
                     <img src="src/logos/small-logo.png" alt="Logo" class="logo d-none d-md-block"
                         style="max-height: 50px;">
                     <h1 class="text-white text-nowrap fs-1 mb-0">Kezouze Photographie</h1>
                 </div>
-                <div class="col-12 col-md-6 text-nowrap">
-                    <a class="btn btn-outline-light border-0 fs-5 p-2" href="#about">À propos</a>
-                    <!-- <a class="btn btn-outline-light border-0 fs-5 p-2" href="index.html">Accueil</a> -->
-                    <a class="btn btn-outline-light border-0 fs-5 p-2" href="gallery.html">Galerie</a>
-                    <!-- <a class="btn btn-outline-light border-0 fs-5 p-2" href="#footer">Contact</a> -->
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center gap-2">
+                    <div class="btn-group">
+                        <button class="btn btn-outline-light dropdown-toggle border-0" type="button"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center">
+                            <li><a class="dropdown-item" href="index.html">Accueil</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">Galerie</a></li>
+                            <li><a class="dropdown-item" href="index.html#about">À propos</a></li>
+                            <li><a class="dropdown-item" href="index.html#footer">Contact</a></li>
+                        </ul>
+                    </div>
                     <a href="mailto:kezouzephotographie@outlook.fr"><img src="src/logos/mail.png" alt="mail-logo"
                             height="40" class="zoom-effect p-2"></a>
                     <a href="https://www.instagram.com/vincentc5109/" target="_blank"><img
@@ -42,8 +50,7 @@
                     <img src="src/photos/2.webp" alt="photo2" class="img-fluid zoom-effect modal-img" decoding="async">
                 </div>
                 <!-- desktop -->
-                <div
-                    class="col-md-2 mx-auto d-none d-md-block">
+                <div class="col-md-2 mx-auto d-none d-md-block">
                     <div>
                         <p class="text-uppercase fs-3 lh-1 m-0">g</p>
                         <p class="text-uppercase fs-3 lh-1 m-0">a</p>
@@ -104,7 +111,7 @@
                         studio. Mais aussi partager mon expérience avec ceux qui veulent se lancer dans la
                         photographie.</p>
                     <p class="fs-6">Je vous invite à consulter mon travail depuis la <a href="gallery.html"
-                            class="fst-italic text-decoration-none">galerie</a>. Contactez-moi si vous avez une
+                            class="fst-italic fs-5 text-decoration-none">galerie</a>. Contactez-moi si vous avez une
                         demande, un projet et nous pourrons en discuter !</p>
                 </div>
                 <div class="col-md-1"></div>
