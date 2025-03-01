@@ -55,10 +55,10 @@ h1 {
 
 .blurred-img {
   filter: blur(5px);
+  /* mis à jour de filter géré par js dans la fonction loadImages() */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* mis à jour de filter géré par js dans la fonction loadImages() */
   transition: filter 750ms ease-in-out;
 }
 
@@ -69,4 +69,10 @@ h1 {
 
 .blurred-img.loaded img {
   opacity: 1;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: #ffffff !important;
+  color: #343a40 !important;
 }
