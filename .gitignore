@@ -7,6 +7,7 @@
 # Ignorer les fichiers système macOS
 *.DS_Store
 src/.DS_Store
+.DS_Store
 
 # Ignorer .gitignore
 .gitignore
