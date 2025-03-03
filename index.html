@@ -22,7 +22,15 @@
                     <h1 class="text-white text-nowrap fs-1 mb-0">Kezouze Photographie</h1>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center gap-2">
-                    <div class="btn-group">
+                    <!-- On desktop -->
+                        <ul class="d-none d-lg-flex list-group list-group-horizontal list-unstyled">
+                            <li><a class="btn btn-outline-light p-2 border-0" href="index.html">Accueil</a></li>
+                            <li><a class="btn btn-outline-light p-2 border-0" href="gallery.html">Galerie</a></li>
+                            <li><a class="btn btn-outline-light p-2 border-0" href="index.html#about">À propos</a></li>
+                            <li><a class="btn btn-outline-light p-2 border-0" href="index.html#footer">Contact</a></li>
+                        </ul>
+                    <!-- On mobile -->
+                    <div class="btn-group d-lg-none">
                         <button class="btn btn-outline-light dropdown-toggle border-0" type="button"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             Menu
@@ -34,6 +42,7 @@
                             <li><a class="dropdown-item" href="index.html#footer">Contact</a></li>
                         </ul>
                     </div>
+                    <!---->
                     <a href="mailto:kezouzephotographie@outlook.fr"><img src="src/logos/mail.png" alt="mail-logo"
                             height="40" class="zoom-effect p-2"></a>
                     <a href="https://www.instagram.com/vincentc5109/" target="_blank"><img
