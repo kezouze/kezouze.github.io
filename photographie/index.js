@@ -1,7 +1,7 @@
 // Importe les photos et gère l'affichage avec grid Masonry sur gallery.html
 export async function loadGallery() {
     try {
-        const response = await fetch('/src/photos.json');
+        const response = await fetch('/photographie/src/photos.json');
         if (!response.ok) {
             throw new Error(`Erreur HTTP, status : ${response.status}`);
         }
